@@ -1,0 +1,137 @@
+<!-- pour la main page -->
+
+<!-- header avec le logo du site et la nav -->
+<header>
+  <a id="Acceuil" href="index.html"
+    ><img
+      src="images/logo.svg"
+      alt="KASA en rouge, le premier A est une maison"
+  /></a>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">A Propos</a>
+  </nav>
+</header>
+
+<!-- pour la partie ou il y a les logement qui saffiche -->
+<main className="main_accueil">
+  <h2 className="chezVous">Chez vous, partout et ailleurs</h2>
+  <ul id="dispositionAccueil">
+    <li><a href="#nosLogements">{variableADef}</a></li>
+    <!-- a iterer autant de fois que ya d'images      -->
+  </ul>
+</main>
+
+<!-- footer du site -->
+<footer>
+  <a href="#Accueil"
+    ><img
+      src="images/logo-white.svg"
+      alt="KASA en blanc, le premier A est une maison"
+  /></a>
+  <span>© 2021 Kasa. Tous droits réservés</span>
+</footer>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- pour la page a propos -->
+
+<!-- + header classique -->
+<main className="main_apropos">
+  <img src="photodemontagne" alt="vu de l'horizon sur une chaine de montagne" />
+  <ul id="dispositionApropos">
+    <li className="apropos_liste--li">
+      <span className="apropos_liste--titre">Fiabilité</span>
+      <p className="apropos_liste--paragraphe">
+        Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+        photos sont conformes aux logements, et toutes les informations sont
+        régulièrement vérifiées par nos équipes.
+      </p>
+    </li>
+    <li className="apropos_liste--li">
+      <span className="apropos_liste--titre">Respect</span>
+      <p className="apropos_liste--paragraphe">
+        La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+        comportement discriminatoire ou de perturbation du voisinage entraînera
+        une exclusion de notre plateforme.
+      </p>
+    </li>
+    <li className="apropos_liste--li">
+      <span className="apropos_liste--titre">Fiabilité</span>
+      <p className="apropos_liste--paragraphe">
+        Nos équipes se tiennent à votre disposition pour vous fournir une
+        expérience parfaite. N'hésitez pas à nous contacter si vous avez la
+        moindre question.
+      </p>
+    </li>
+    <li className="apropos_liste--li">
+      <span className="apropos_liste--titre">Fiabilité</span>
+      <p className="apropos_liste--paragraphe">
+        La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour
+        les voyageurs, chaque logement correspond aux critères de sécurité
+        établis par nos services. En laissant une note aussi bien à l'hôte qu'au
+        locataire, cela permet à nos équipes de vérifier que les standards sont
+        bien respectés. Nous organisons également des ateliers sur la sécurité
+        domestique pour nos hôtes.
+      </p>
+    </li>
+  </ul>
+</main>
+<!-- +footer classique -->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- pour la page des loc -->
+<!-- +header -->
+<main className="main_loc">
+  <figure className="caroussel">
+    <img src="{jesaispas}" alt="{objectAlt}" />
+    <!-- reflechir a l'orga du caroussel -->
+  </figure>
+  <article className="location_info">
+    <h2 className="location_titre">{nomdelaloc}</h2>
+    <span className="location_lieu">{emplacementloc}</span>
+    <ul className="location_ville">
+      <li>{ville}</li>
+      <!-- a iterer en fonction -->
+    </ul>
+    <div className="location_review">
+      <span className="location_review--etoile"
+        ><!-- en fonction du rating mettre-->
+        <i class="fas fa-star colored"></i
+        ><!-- si compte pour 1 et --><i class="fas fa-star"></i
+        ><!-- si 0 --></span
+      >
+      <div className="location_review--client">
+        <span>{nomClient}</span>
+        <img src="{photoClient}" alt="photo du client" />
+      </div>
+    </div>
+    <ul className="location_info--liste">
+      <li>
+        <h2 className="location_info--titre">Description</h2>
+        <p className="location_info--texte">{descloc}</p>
+      </li>
+      <li>
+        <h2 className="location_info--titre">Équipement</h2>
+        <span className="location_info--texte">{equiploc1}</span>
+        <span className="location_info--texte">{equiploc2}</span>
+      </li>
+    </ul>
+  </article>
+</main>
+
+<!-- +footer -->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- pour la page 404 -->
+<!-- +header -->
+<main className="main_404">
+  <h1 className="404">404</h1>
+  <span className="404_texte"
+    >Oups! La page que vous demandez n'existe pas.</span
+  >
+  <a href="#accueil">Retourner sur la page d'accueil</a>
+</main>
+<!-- +footer -->
