@@ -20,7 +20,7 @@ function Logements() {
           </span>
           <div className="location_review--client">
             <span>variablenomClient</span>
-            <img src="{photoClient}" alt="photo du client" />
+            <img src="photoduclien" alt="client" />
           </div>
         </div>
         <ul className="location_info--liste">
