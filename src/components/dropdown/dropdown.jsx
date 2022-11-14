@@ -10,6 +10,7 @@ function Dropdown() {
           <>
             <dt key={item.id} className="apropos_liste--titre">
               {item.title}
+              <i class="fa-solid fa-chevron-up"></i>
             </dt>
             <dd className="apropos_liste--paragraphe">{item.description}</dd>
           </>
