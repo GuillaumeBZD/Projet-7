@@ -9,7 +9,7 @@ return (
         {data.map((item) => {
         return (
         <li className="carte_li">
-            <Link to={`/accueil/${item.id}`} className="lien_carte"  key={item.id}>
+            <Link to={`/logements/${item.id}`} className="lien_carte"  key={item.id}>
                 <img 
                 src={item.cover} alt={item.title} className="carte_img"/>
                 <h4 className="carte_titre">{item.title}</h4>

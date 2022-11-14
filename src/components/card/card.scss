@@ -32,14 +32,27 @@
 }
 
 .carte_titre {
+  //   position: absolute;
+  //   bottom: 1rem;
+  //   left: 1rem;
+  //   bottom: 10px;
+  //   text-align: center;
+  //   color: #fff;
+  //   font-size: 1.2em;
+  //   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  bottom: 10px;
-  text-align: center;
-  color: #fff;
-  font-size: 1.2em;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
 }
 
 .lien_carte {
