@@ -1,0 +1,48 @@
+@import "../../style/style.scss";
+
+.dispo_accueil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  margin: 0;
+  max-width: 1240px;
+  height: 100%;
+  list-style: none;
+  background-color: $background;
+  border-radius: 1.5em;
+  padding: 1.5em;
+  justify-items: center;
+  margin: 2.5rem 0;
+}
+
+.carte_li {
+  max-width: 340px;
+  max-height: 340px;
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin: 1.5em;
+  position: relative;
+}
+
+.carte_img {
+  width: 100%;
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.carte_titre {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.lien_carte {
+  width: 100%;
+  text-decoration: none;
+}

@@ -1,0 +1,17 @@
+@import "../../style/style.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 1rem 0;
+  text-align: center;
+  background: #000;
+
+  span {
+    color: white;
+    font-weight: 500;
+    font-size: $taille_txt;
+    padding-top: 40px;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
-import "./header"
+import "./header.scss";
 
 export function Header() {
   return (
@@ -14,8 +14,12 @@ export function Header() {
         />
       </Link>
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="Apropos">A Propos</Link>
+        <Link to="/" className="lien_head">
+          Accueil
+        </Link>
+        <Link to="Apropos" className="lien_head">
+          À Propos
+        </Link>
       </nav>
     </header>
   );

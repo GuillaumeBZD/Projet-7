@@ -1,10 +1,10 @@
 import React from "react";
 import {Header} from "./components/header/header";
 import {Footer} from "./components/footer/footer";
-import Accueil from "./pages/accueil";
-import Logements from "./pages/logements";
-import Erreur from "./pages/erreur";
-import Apropos from "./pages/apropos";
+import Accueil from "./pages/accueil/accueil";
+import Logements from "./pages/logements/logements";
+import Erreur from "./pages/erreur/erreur";
+import Apropos from "./pages/a propos/apropos";
 import { Route,Routes} from "react-router-dom";
 
 function App() {

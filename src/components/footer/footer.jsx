@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo-white.svg";
+import "./footer.scss"
 
 export function Footer() {
   return (
     <footer>
       <Link to="/">
         <img
-          src="images/logo-white.svg"
+          src={logo}
           alt="KASA en blanc, le premier A est une maison"
         />
       </Link>
