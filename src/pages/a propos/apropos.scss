@@ -1,13 +1,23 @@
 @import "../../style/style.scss";
 
-.main_apropos{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: column wrap;
-margin-top: 1.5rem;
+.main_apropos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: 1.5rem;
 }
 
 .img_apropos {
-    border-radius: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.dispo_apropos {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1240px;
+  margin-top: 31px;
+  width: 100%;
 }

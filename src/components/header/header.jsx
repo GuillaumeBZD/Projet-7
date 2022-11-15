@@ -1,9 +1,13 @@
 import React from "react";
 import logo from "../../images/logo.svg";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./header.scss";
 
 export function Header() {
+  let activeStyle = {
+    textDecoration: "underline",
+  };
+
   return (
     <header>
       <Link to="/" className="logo_lien">
@@ -14,12 +18,12 @@ export function Header() {
         />
       </Link>
       <nav>
-        <Link to="/" className="lien_head">
+        <NavLink to="/" className="lien_head" style={({ isActive }) => isActive ? activeStyle : undefined}>
           Accueil
-        </Link>
-        <Link to="Apropos" className="lien_head">
+        </NavLink>
+        <NavLink to="Apropos" className="lien_head" style={({ isActive }) => isActive ? activeStyle : undefined}>
           À Propos
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );

@@ -1,22 +1,30 @@
 import React from "react";
 import "./dropdown.scss";
-import data from "../../ressources/dropdown";
+import { useState } from "react";
 
-function Dropdown() {
+function Dropdown(props) {
+  const [opened, setOpened] = useState(false);
+
+  let content = (
+    <dd className={`apropos_liste--paragraphe ${opened ? "open" : "close"}`}>
+      {props.content}
+    </dd>
+  );
+
+  // let chevron = (<
+  //   className="fa-solid fa-chevron-up"> )
   return (
-    <dl className="dispo_apropos">
-      {data.map((item) => {
-        return (
-          <>
-            <dt key={item.id} className="apropos_liste--titre">
-              {item.title}
-              <i class="fa-solid fa-chevron-up"></i>
-            </dt>
-            <dd className="apropos_liste--paragraphe">{item.description}</dd>
-          </>
-        );
-      })}
-    </dl>
+    <>
+      <dt className="apropos_liste--titre">
+        {props.title}
+        <i
+          className="fa-solid fa-chevron-up"
+          onClick={() => setOpened(!opened)}
+        ></i>
+      </dt>
+
+      {content}
+    </>
   );
 }
 
