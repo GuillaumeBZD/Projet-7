@@ -1,6 +1,15 @@
 import React from "react";
+import "./logements.scss";
+// import { useState } from "react";
+import data from "../../data/logements.json";
+import Tag from "../../components/tag/tag";
+import { useParams, Navigate } from "react-router-dom";
 
 function Logements() {
+  const {id} = useParams();
+  const logement = data.find((item) => item.id === id);
+  if (!logement) return <Navigate to="/error" />;
+
   return (
     <main className="main_loc">
       <figure className="caroussel">
@@ -9,10 +18,7 @@ function Logements() {
       <article className="location_info">
         {/* <h2 className="location_titre">{nomdelaloc}</h2> */}
         {/* <span className="location_lieu">{emplacementloc}</span> */}
-        <ul className="location_ville">
-          {/* <li>{ville}</li> */}
-          {/* <!-- a iterer en fonction --> */}
-        </ul>
+        <Tag />
         <div className="location_review">
           <span className="location_review--etoile">
             <i class="fas fa-star colored"></i>

@@ -11,16 +11,14 @@ function Dropdown(props) {
     </dd>
   );
 
-  // let chevron = (<
-  //   className="fa-solid fa-chevron-up"> )
+  let chevron = (<i
+    className={`fa-solid fa-chevron-up ${opened ? "down" : "up"}`} onClick={() => setOpened(!opened)}></i>);
+
   return (
     <>
       <dt className="apropos_liste--titre">
         {props.title}
-        <i
-          className="fa-solid fa-chevron-up"
-          onClick={() => setOpened(!opened)}
-        ></i>
+        {chevron}
       </dt>
 
       {content}

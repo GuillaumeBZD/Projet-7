@@ -1,0 +1,21 @@
+@import "../../style/style.scss";
+
+.tag_list {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+}

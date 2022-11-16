@@ -1,7 +1,7 @@
 import React from "react";
 import "./accueil.scss";
 import Card from "../../components/card/card";
-import data from "../../ressources/logements.json";
+import data from "../../data/logements.json";
 
 function Accueil() {
   const cards = data.map((item) => {

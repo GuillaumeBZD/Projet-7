@@ -2,7 +2,7 @@ import React from "react";
 import "./apropos.scss";
 import image from "../../images/backApr.png";
 import Dropdown from "../../components/dropdown/dropdown";
-import data from "../../ressources/dropdown";
+import data from "../../data/dropdown";
 
 function Apropos() {
   const dropdowns = data.map((item) => {
