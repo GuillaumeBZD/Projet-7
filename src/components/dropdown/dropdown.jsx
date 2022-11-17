@@ -20,7 +20,6 @@ function Dropdown(props) {
         {props.title}
         {chevron}
       </dt>
-
       {content}
     </>
   );

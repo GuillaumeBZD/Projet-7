@@ -1,14 +1,10 @@
 import React from "react";
 import "./tag.scss";
-import { useParams } from "react-router-dom";
-import data from "../../data/logements.json";
 
-function Tag() {
-  const { id } = useParams();
-  const logement = data.find((item) => item.id === id);
+function TagList(props) {
   return (
     <ul className="tag_list">
-      {logement.tags.map((tag) => (
+      {props.items.map((tag) => (
         <li className="tag" key={tag}>
           {tag}
         </li>
@@ -17,4 +13,4 @@ function Tag() {
   );
 }
 
-export default Tag;
+export default TagList;
