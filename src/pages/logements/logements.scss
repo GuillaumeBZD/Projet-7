@@ -1,1 +1,56 @@
 @import "../../style/style.scss";
+
+.main_loc {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+}
+
+.main_loc article {
+    display: flex;
+    flex-direction: column;
+}
+
+.host_picture {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.location_review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.location_info--liste {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin-bottom: 25px;
+    height: 100%;
+    box-sizing: content-box;
+
+
+    dd, dt {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 142.6%;
+        box-sizing: content-box;
+        width: auto;
+    }
+
+    dd.open {
+        margin-bottom: 14px;
+        height: auto;
+        box-sizing: content-box;
+    }
+}
+
+.location_info--liste--box{
+    width: 582px;
+    box-sizing: content-box;
+}
