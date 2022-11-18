@@ -6,10 +6,12 @@ import Logements from "./pages/logements/logements";
 import Erreur from "./pages/erreur/erreur";
 import Apropos from "./pages/a propos/apropos";
 import { Route, Routes } from "react-router-dom";
+import "./index.scss"
 
 function App() {
   return (
     <>
+    <div className="content_style">
       <Header />
       <div className="app-content">
         <Routes>
@@ -20,8 +22,9 @@ function App() {
           <Route path="*" element={<Erreur />} />
         </Routes>
       </div>
-
+      </div>
       <Footer />
+      
     </>
   );
 }

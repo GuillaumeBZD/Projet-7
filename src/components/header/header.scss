@@ -4,42 +4,41 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
   max-width: 1240px;
-  margin: 0 100px;
-  margin-top: 40px;
   width: 100%;
-  height: 50px;
-  }
+}
 
-  nav {
-    display: flex;
-    max-width: 309px;
-    gap: 4vw;
-  }
+nav {
+  display: flex;
+  max-width: 309px;
+  gap: 4vw;
+}
 
-  .lien_head {
-    color: $primary;
-    text-decoration: none;
-    font-size: $taille_txt;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-    }
+.lien_head {
+  color: $primary;
+  text-decoration: none;
+  font-size: $taille_txt;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
 
 @media all and (max-width: 376px) {
-      header {
-        max-width: 375px;
-        margin: 20px;
-      }
-    
-      img {
-        width: 145px;
-        height: 47px;
-        padding-left: 20px;
-      }
-    
-      .lien_head {
-        font-size: 12px;
-        padding-right: 20px;
-      }
+  header {
+    padding: 0 20px;
+    max-width: 335px;
+    margin-top: 20px;
+    height: 47px;
+
+    .logo_site {
+      max-width: 100px;
+      object-fit: contain;
     }
+
+    .lien_head {
+      font-size: 12px;
+      padding-left: 20px;
+    }
+  }
+}

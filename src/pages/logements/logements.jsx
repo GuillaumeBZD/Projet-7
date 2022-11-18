@@ -20,7 +20,6 @@ function Logements() {
 
   return (
     <main className="main_loc">
-      {/* <Slider key={slides.id} alt={slides.title} pictures={slides.pictures}/> */}
       <Slider slides={logement.pictures} />
       <article className="location_info">
         {/* <h2 className="location_titre">{nomdelaloc}</h2> */}

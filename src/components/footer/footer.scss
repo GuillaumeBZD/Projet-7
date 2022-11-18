@@ -3,9 +3,10 @@
 footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 145px;
-  padding: 1rem 0;
+  height: 177px;
   text-align: center;
   background: #000;
 
@@ -13,6 +14,12 @@ footer {
     color: white;
     font-weight: 500;
     font-size: $taille_txt;
-    padding-top: 40px;
+    margin-top: 40px;
   }
+}
+
+@media all and (max-width: 376px) { 
+  footer span{
+      font-size: 17px;
+    }
 }

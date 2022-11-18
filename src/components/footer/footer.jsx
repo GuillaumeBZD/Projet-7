@@ -12,7 +12,7 @@ export function Footer() {
           alt="KASA en blanc, le premier A est une maison"
         />
       </Link>
-      <span>© 2021 Kasa. Tous droits réservés</span>
+      <span>© 2020 Kasa. Tous droits réservés</span>
     </footer>
   );
 }
