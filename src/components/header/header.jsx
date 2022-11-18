@@ -3,7 +3,6 @@ import logo from "../../images/logo.svg";
 import { NavLink, Link } from "react-router-dom";
 import "./header.scss";
 
-
 export function Header() {
   let activeStyle = {
     textDecoration: "underline",
@@ -19,10 +18,18 @@ export function Header() {
         />
       </Link>
       <nav>
-        <NavLink to="/" className="lien_head" style={({ isActive }) => isActive ? activeStyle : undefined}>
+        <NavLink
+          to="/"
+          className="lien_head"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
           Accueil
         </NavLink>
-        <NavLink to="Apropos" className="lien_head" style={({ isActive }) => isActive ? activeStyle : undefined}>
+        <NavLink
+          to="Apropos"
+          className="lien_head"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
           À Propos
         </NavLink>
       </nav>

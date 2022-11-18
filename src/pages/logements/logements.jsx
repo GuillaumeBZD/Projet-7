@@ -4,6 +4,7 @@ import data from "../../data/logements.json";
 import TagList from "../../components/tag/tag";
 import Slider from "../../components/slider/slider";
 import Dropdown from "../../components/dropdown/dropdown";
+import Rating from "../../components/rating/rating";
 import { useParams, Navigate } from "react-router-dom";
 
 function Logements() {
@@ -13,8 +14,7 @@ function Logements() {
 
   const listeEquipement = logement.equipments.map((item) => {
     return (
-      
-    <span className="equipments_item">{item}<br/></span>
+    <span key={item} className="equipments_item">{item}<br/></span>
     )
   });
 
@@ -26,11 +26,7 @@ function Logements() {
         <span className="location_lieu">{logement.location}</span>
         <TagList items={logement.tags} />
         <div className="location_review">
-          <span className="location_review--etoile">
-            <i class="fas fa-star colored"></i>
-            <i class="fas fa-star"></i>
-          </span>
-          <div className="location_review--client">
+          <div className="location_host">
             <span className="host_name">{logement.host.name}</span>
             <img
               className="host_picture"
@@ -38,8 +34,8 @@ function Logements() {
               alt="portrait de l'hébergant"
             />
           </div>
+          <Rating starValue={logement.rating} total={5}/>
         </div>
-        
         <dl className="location_info--liste">
           <div className="location_info--liste--box"><Dropdown title="Description" content={logement.description} /></div>
           <div className="location_info--liste--box">

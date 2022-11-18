@@ -23,6 +23,47 @@ nav {
   font-weight: 500;
   line-height: 142.6%;
 }
+@media all and (max-width: 1286px) {
+  header {
+    max-width: 1050px;
+  }
+}
+
+@media all and (max-width: 1111px) {
+  header {
+    max-width: 890px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  header {
+    max-width: 750px;
+  }
+}
+
+@media all and (max-width: 801px) {
+  header {
+    max-width: 730px;
+  }
+}
+
+@media all and (max-width: 511px) {
+  .lien_head {
+    font-size: 19px;
+  }
+}
+
+@media all and (max-width: 422px) {
+  .lien_head {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  header {
+    margin: 0 20px;
+  }
+}
 
 @media all and (max-width: 376px) {
   header {

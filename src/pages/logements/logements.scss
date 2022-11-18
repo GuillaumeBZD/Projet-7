@@ -1,56 +1,98 @@
 @import "../../style/style.scss";
 
 .main_loc {
-    max-width: 1240px;
-    width: 100%;
-    height: 100%;
+  max-width: 1240px;
+  width: 100%;
+  height: 100%;
 }
 
 .main_loc article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.location_titre {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: $primary;
+  margin: 0;
+  margin-top: 30px;
+}
+.location_lieu {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: $primary;
+}
+
+.location_host{
     display: flex;
-    flex-direction: column;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .host_picture {
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.host_name {
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: $primary;
+  width: 93px;
+  height: 52px;
 }
 
 .location_review {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0px;
+  top: 30px;
 }
-
 
 .location_info--liste {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1240px;
-    margin-bottom: 25px;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin-bottom: 25px;
+  height: 100%;
+  box-sizing: content-box;
+
+  dd,
+  dt {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
     box-sizing: content-box;
+    width: auto;
+  }
 
-
-    dd, dt {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 142.6%;
-        box-sizing: content-box;
-        width: auto;
-    }
-
-    dd.open {
-        margin-bottom: 14px;
-        height: auto;
-        box-sizing: content-box;
-    }
+  dd.open {
+    margin-bottom: 14px;
+    height: auto;
+    box-sizing: content-box;
+  }
 }
 
-.location_info--liste--box{
-    width: 582px;
-    box-sizing: content-box;
+.location_info--liste--box {
+  width: 582px;
+  box-sizing: content-box;
 }

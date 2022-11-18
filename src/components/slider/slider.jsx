@@ -7,9 +7,6 @@ function Slider(props) {
   const [current, setCurrent] = useState(0);
   const length = props.slides.length;
 
-  // pour gerer le cas ou il y a qu'une seule image
-  // if (length < 1) return (<div className="arrow_position" style={display: "none"}>);
-
   //gestion du suivant / precedent
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);

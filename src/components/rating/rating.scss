@@ -1,1 +1,23 @@
 @import "../../style/style.scss";
+
+
+.rating_box {
+    width: 196px;
+    height: 36px;
+    margin-top: 21px;
+    text-align: right;
+}
+.rating_box i {
+  &.active {
+    color: $primary;
+  }
+
+  &.inactive {
+    color: grey;
+  }
+}
+
+.rating_box i {
+    font-size: 24px;
+    padding-left: 4px;
+}

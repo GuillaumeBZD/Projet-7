@@ -4,8 +4,8 @@
   max-width: 340px;
   max-height: 340px;
   border-radius: 0.5em;
-  overflow: hidden;
   margin: 1.5em;
+  overflow: hidden;
   position: relative;
 }
 
@@ -39,11 +39,40 @@
   text-decoration: none;
 }
 
+@media all and (max-width: 801px) {
+  .carte_li {
+    max-width: 450px;
+  }
+
+  .carte_img {
+    max-width: unset;
+  }
+  }
+
+@media all and (max-width: 510px) { 
+  .carte_li {
+    max-width: 435px;
+    height: 355px;
+    background-color: white;
+    margin: 0;
+  }
+  .carte_titre {
+    top: 68%;
+    height: 63px;
+  }
+
+  .carte_img {
+    max-width: 435px;
+    width: 100%;
+    max-height: 355px;
+    height: 100%;
+  }
+}
+
 @media all and (max-width: 376px) {
   .carte_li {
     max-width: 335px;
     height: 255px;
-    grid-template-columns: repeat(1, 1fr);
     background-color: white;
     margin: 0;
   }

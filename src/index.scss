@@ -5,14 +5,14 @@ body {
 #root {
   font-family: Montserrat, Arial, elvetica, sans-serif;
   font-weight: 500;
+}
 
-  .app-content {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - (90px + 177px));
-    width: 100%;
-    max-width: 1240px;
-  }
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - (90px + 177px));
+  width: 100%;
+  max-width: 1240px;
 }
 
 .content_style {
@@ -21,8 +21,38 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
 
-  @media all and (max-width: 376px) {
+@media all and (max-width: 1286px) {
+  .app-content {
+    max-width: 1050px;
+  }
+}
+
+@media all and (max-width: 1111px) {
+  .app-content {
+    max-width: 890px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .app-content {
+    max-width: 750px;
+  }
+}
+
+@media all and (max-width: 801px) {
+  .app-content {
+    max-width: 730px;
+  }
+
+  .content_style {
+    margin: 30px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .content_style {
     margin: 0 20px;
   }
 }
