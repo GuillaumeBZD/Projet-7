@@ -1,11 +1,10 @@
 @import "../../style/style.scss";
 
-
 .rating_box {
-    width: 196px;
-    height: 36px;
-    margin-top: 21px;
-    text-align: right;
+  width: 196px;
+  height: 36px;
+  margin-top: 21px;
+  text-align: right;
 }
 .rating_box i {
   &.active {
@@ -18,6 +17,29 @@
 }
 
 .rating_box i {
-    font-size: 24px;
-    padding-left: 4px;
+  font-size: 24px;
+  padding-left: 4px;
+}
+
+@media all and (max-width: 801px) {
+  .rating_box {
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .rating_box {
+    height: 18px;
+
+    i {
+      font-size: 18px;
+    }
+  }
+}
+
+@media all and (max-width: 375px) { 
+  .rating_box 
+    i {
+      font-size: 14px;
+    }
 }

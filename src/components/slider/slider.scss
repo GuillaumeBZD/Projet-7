@@ -59,3 +59,33 @@
   bottom: 10px;
 }
 
+@media all and (max-width: 731px) {
+.slider_base i {
+  font-size: 2rem;
+}
+}
+
+@media all and (max-width: 466px) {
+.slider_base {
+  height: 275px;
+  max-width: 466px;
+}
+}
+
+@media all and (max-width: 376px) {
+  .slider_base {
+    margin-top: 27px;
+    max-width: 335;
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .count_image {
+    display: none;
+  }
+
+  .slider_base i {
+    padding: 0 2px;
+    font-size: 24px;
+  }
+}

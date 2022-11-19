@@ -27,8 +27,6 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 142.6%;
-  display: flex;
-  align-items: flex-end;
   color: #ffffff;
   margin: 0;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
@@ -47,9 +45,9 @@
   .carte_img {
     max-width: unset;
   }
-  }
+}
 
-@media all and (max-width: 510px) { 
+@media all and (max-width: 510px) {
   .carte_li {
     max-width: 435px;
     height: 355px;

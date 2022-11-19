@@ -14,8 +14,11 @@ function Logements() {
 
   const listeEquipement = logement.equipments.map((item) => {
     return (
-    <span key={item} className="equipments_item">{item}<br/></span>
-    )
+      <span key={item} className="equipments_item">
+        {item}
+        <br />
+      </span>
+    );
   });
 
   return (
@@ -34,17 +37,17 @@ function Logements() {
               alt="portrait de l'hébergant"
             />
           </div>
-          <Rating starValue={logement.rating} total={5}/>
+          <Rating starValue={logement.rating} total={5} />
         </div>
-        <dl className="location_info--liste">
-          <div className="location_info--liste--box"><Dropdown title="Description" content={logement.description} /></div>
-          <div className="location_info--liste--box">
-            <Dropdown
-            title="Équipements"
-            content={listeEquipement}
-          /></div>
-        </dl>
       </article>
+      <dl className="location_info--liste">
+        <div className="location_info--liste--box">
+          <Dropdown title="Description" content={logement.description} />
+        </div>
+        <div className="location_info--liste--box">
+          <Dropdown title="Équipements" content={listeEquipement} />
+        </div>
+      </dl>
     </main>
   );
 }

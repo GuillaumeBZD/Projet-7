@@ -8,6 +8,7 @@
   color: white;
   max-width: 1023px;
   width: 100%;
+  min-width: 381px;
   height: 47px;
   font-size: 24px;
   font-weight: 500;
@@ -36,6 +37,7 @@
   color: $primary;
   width: 100%;
   max-width: 1023px;
+  min-width: 381px;
   font-size: 24px;
   font-weight: 500;
   line-height: 34px;
@@ -53,5 +55,96 @@
   &.close {
     height: 0;
     display: none;
+  }
+}
+
+@media all and (max-width: 1286px) {
+  .dispo_apropos dt,
+  .dispo_apropos dd {
+    max-width: 833px;
+  }
+}
+
+@media all and (max-width: 1111px) {
+  .dispo_apropos dt,
+  .dispo_apropos dd {
+    max-width: 673px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .dispo_apropos dt,
+  .dispo_apropos dd {
+    max-width: 533px;
+  }
+}
+
+@media all and (max-width: 801px) {
+  .dispo_apropos dt,
+  .dispo_apropos dd {
+    max-width: 513px;
+    min-width: 280px;
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .dispo_apropos dt {
+    font-size: 16px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 30px;
+  }
+  .apropos_liste--paragraphe {
+    &.open {
+      height: unset;
+      padding-top: 23px;
+      padding-left: 11px;
+    }
+  }
+
+  .dispo_apropos dd {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 142.6%;
+    padding-top: 23px;
+    padding-left: 11px;
+    box-sizing: border-box;
+  }
+
+  .apropos_liste--titre i {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 376px) {
+  .dispo_apropos dt,
+  .dispo_apropos dd {
+    max-width: 335px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .dispo_apropos dt {
+    font-size: 13px;
+  }
+
+  .dispo_apropos dd {
+    font-size: 12px;
+  }
+
+  .apropos_liste--titre i {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 326px) {
+  .dispo_apropos dt,
+  .dispo_apropos dd {
+    max-width: 300px;
+    min-width: 200px;
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
