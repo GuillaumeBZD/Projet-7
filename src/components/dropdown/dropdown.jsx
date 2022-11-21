@@ -11,8 +11,12 @@ function Dropdown(props) {
     </dd>
   );
 
-  let chevron = (<i
-    className={`fa-solid fa-chevron-up ${opened ? "down" : "up"}`} onClick={() => setOpened(!opened)}></i>);
+  let chevron = (
+    <i
+      className={`fa-solid fa-chevron-down ${opened ? "down" : "up"}`}
+      onClick={() => setOpened(!opened)}
+    ></i>
+  );
 
   return (
     <>

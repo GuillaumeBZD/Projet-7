@@ -37,9 +37,8 @@
   }
 }
 
-@media all and (max-width: 375px) { 
-  .rating_box 
-    i {
-      font-size: 14px;
-    }
+@media all and (max-width: 374px) {
+  .rating_box i {
+    font-size: 14px;
+  }
 }

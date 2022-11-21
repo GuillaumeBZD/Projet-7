@@ -1,3 +1,7 @@
+Dans un premier temps, à la racine du dossier faire npm install
+Ensuite vous pouvez faire npm start
+Rendez vous sur http://localhost:3000/ pour voir le résultat
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,12 @@
+        <Route path="/" element={<Accueil />} />
+        <Route path="/Apropos" element={<Apropos />} />
+        <Route path="/Logements/:id" element={<Logements />} />
+        <Route path="Erreur" element={<Erreur />} />
+        <Route path="*" element={<Erreur />} />
+
+        Pour les routes nous avons : 
+        http://localhost:3000/  ou / qui mène à la page d'acceuil
+        http://localhost:3000/Apropos  ou /Apropos qui mène à la page à propos
+        http://localhost:3000/Logements/:id ou /Logements/:id qui mène à la page du logement sur lequel on a cliquer sur l'acceuil
+        http://localhost:3000/Erreur ou /Erreur qui mène à la page d'erreur
+        Tout autre URL entré mène à la page erreur

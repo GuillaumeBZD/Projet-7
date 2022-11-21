@@ -207,7 +207,7 @@
   }
   .location_review {
     margin: 0;
-    margin-top: 15px;
+    margin-top: 15pxp;
     top: 0;
   }
 
@@ -241,7 +241,7 @@
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 374px) {
   .location_info--liste dt {
     max-width: 335px;
     min-width: 255px;
@@ -253,7 +253,7 @@
     min-width: 255px;
     width: 55%;
   }
-  
+
   .location_info--liste--box {
     max-width: 335px;
     width: 100%;

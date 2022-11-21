@@ -3,7 +3,7 @@ import "./slider.scss";
 import { useState } from "react";
 
 function Slider(props) {
-  //constante pour l'useState et pour recuperer l'ID dans l'URL
+  //constante pour l'useState
   const [current, setCurrent] = useState(0);
   const length = props.slides.length;
 
