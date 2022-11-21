@@ -1,9 +1,9 @@
 Dans un premier temps, 
-Vous devez avoir NodeJs installé sur votre machine [https://nodejs.org/en/download/]
+Vous devez avoir NodeJs[https://nodejs.org/en/download/] installé sur votre machine
 à la racine du dossier faire  `npm install`
 puis `npm start`
 
-Vous pouvez consulter le resultat de l'application sur [http://localhost:3000]
+Vous pouvez consulter le resultat de l'application sur http://localhost:3000
 
 # Getting Started with Create React App
 
