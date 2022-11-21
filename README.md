@@ -1,4 +1,4 @@
-Dans un premier temps, à la racine du dossier faire ### `npm install`
+Dans un premier temps, à la racine du dossier faire  `npm install`
 
 Ensuite vous pouvez faire "npm start"
 
